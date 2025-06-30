@@ -22,9 +22,9 @@ GROUP BY
     t.schema_id,
     t.name
 HAVING
-	SUM(p.rows) <> 0
+    SUM(p.rows) <> 0
 ORDER BY
-	SUM(p.rows) DESC,
+    SUM(p.rows) DESC,
     SchemaName,
     TableName;
 ```
